@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  
+}
+
+main {
+    background-color: #f0f0f0;
+}
+ 
+/* header start */
+
+.ru-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 10px;
+}
+
+.header-logo-nome {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-nome p {
+    margin-left: 20px;
+}
+
+.header-logo {
+    width: 100px;
+    height: 73px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header-nav {
+    margin-right: 70px;
+}
+
+.nav-link {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* header end */
+
+/* banner start */
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.banner {
+  background-image: url('../images/image1.png'); /* coloque sua imagem */
+  background-size: cover; /* faz a imagem preencher o container */
+  background-position: center;
+  height: 300px;
+  width: 80vw;
+  position: relative; /* necessário para posicionar o conteúdo dentro */
+  border-radius: 12px;
+  overflow: hidden;
+
+  margin-top: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo-banner {
+    position: absolute; /* para sobrepor na imagem */
+    background: rgba(0, 56, 112, 0.75); /* azul com transparência */
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    max-width: 350px;
+
+    display: flex;              /* ativa o flexbox */
+    flex-direction: column;     /* coloca os itens em coluna (um em cima do outro) */
+    justify-content: center;    /* centraliza verticalmente */
+    align-items: center;        /* centraliza horizontalmente */
+    text-align: center;
+}
+
+.conteudo-banner h2 {
+    margin: 0.5rem 0 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.conteudo-banner p {
+    font-family: sans-serif;
+}
+
+.conteudo-banner button {
+    margin-top: 15px;
+}
+
+.botao-banner {
+  background-color: #f5c518;      /* amarelo */
+  color: #000;                    /* texto preto */
+  border: none;                   /* sem borda */
+  border-radius: 8px;             /* bordas arredondadas */
+  padding: 10px 25px;             /* espaçamento interno */
+  font-weight: 600;               /* texto mais forte */
+  text-decoration: none;          /* remove o sublinhado */
+  font-size: 16px;                /* tamanho da fonte */
+  transition: all 0.3s ease;      /* animação suave no hover */
+  cursor: pointer;                /* mostra o cursor de clique */
+  display: inline-block;          /* mantém o formato de botão */
+}
+
+.btn-yellow:hover {
+  background-color: #e0b713;      /* amarelo mais escuro no hover */
+  transform: scale(1.05);         /* leve aumento */
+}
+
+/* banner end */
+
+/* cardapio start */
+
+.cardapio {
+    height: 300px;
+    margin-top: 20px;
+    width: 1536px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.cardapio-content {
+    padding: 15px;
+}
+
+.cardapio-content h1 {
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.cardapio-content h2 {
+    padding-bottom: 20px;
+}
+
+/* cardapio end */
+
+/* avaliacoes start */
+
+.avaliacoes {
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1536px;
+    background-color: white;
+    border-radius: 12px;
+
+    display: flex;              /* ativa o flexbox */
+    flex-direction: column;     /* coloca os itens em coluna (um em cima do outro) */
+    justify-content: center;    /* centraliza verticalmente */
+    align-items: center;        /* centraliza horizontalmente */
+    text-align: center;
+}
+
+.avaliacoes h1 {
+    padding-bottom: 20px;
+}
+
+.estrelas {
+    width: 230px;
+}
+
+.textarea {
+    padding: 20px;
+}
+
+.botao-enviar {
+    background-color: #f5c518;      /* amarelo */
+    color: #000;                    /* texto preto */
+    border: none;                   /* sem borda */
+    border-radius: 8px;             /* bordas arredondadas */
+    padding: 10px 25px;             /* espaçamento interno */
+    font-weight: 600;               /* texto mais forte */
+    text-decoration: none;          /* remove o sublinhado */
+    font-size: 16px;                /* tamanho da fonte */
+    transition: all 0.3s ease;      /* animação suave no hover */
+    cursor: pointer;                /* mostra o cursor de clique */
+    display: inline-block;          /* mantém o formato de botão */
+}
+
+/* avaliacoes end */
+
+/* footer start */
+
+footer {
+    height: 500px;
+    background-color: blue;
+
+}
