@@ -4,13 +4,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   
 }
 
 main {
-    background-color: #e7e7e7;
+    background-color: #e1e1e1;
 }
  
 /* header start */
@@ -63,19 +67,22 @@ main {
 .main {
     display: flex;
     justify-content: center;
+
+    padding-top: 20px;
+    
 }
 
 .banner {
-  background-image: url('../images/image1.png'); /* coloque sua imagem */
+  background-image: url('../images/banner_ru.png'); /* coloque sua imagem */
   background-size: cover; /* faz a imagem preencher o container */
   background-position: center;
   height: 300px;
-  width: 80vw;
+  width: 1536px;
   position: relative; /* necessário para posicionar o conteúdo dentro */
   border-radius: 12px;
   overflow: hidden;
-
   margin-top: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   display: flex;
   justify-content: center;
@@ -88,7 +95,7 @@ main {
     color: white;
     padding: 1.5rem 2rem;
     border-radius: 8px;
-    max-width: 350px;
+    max-width: 400px;
 
     display: flex;              /* ativa o flexbox */
     flex-direction: column;     /* coloca os itens em coluna (um em cima do outro) */
@@ -140,6 +147,8 @@ main {
     width: 1536px;
     background-color: white;
     border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 }
 
 .cardapio-content {
@@ -168,7 +177,7 @@ main {
 .avaliacoes {
     height: 500px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width: 1536px;
     background-color: white;
     border-radius: 12px;
@@ -178,10 +187,32 @@ main {
     justify-content: center;    /* centraliza verticalmente */
     align-items: center;        /* centraliza horizontalmente */
     text-align: center;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.avaliacoes h1 {
-    padding-bottom: 20px;
+.avaliacoes-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.food-icon {
+    margin-left: 10px;
+}
+
+.food-icon {
+  background-color: #2ecc71; /* Verde */
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
 }
 
 .estrelas {
