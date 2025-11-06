@@ -175,7 +175,7 @@ main {
 /* avaliacoes start */
 
 .avaliacoes {
-    height: 500px;
+    height: 550px;
     margin-top: 20px;
     margin-bottom: 40px;
     width: 1536px;
@@ -219,10 +219,6 @@ main {
     width: 230px;
 }
 
-.textarea {
-    padding: 20px;
-}
-
 .botao-enviar {
     background-color: #f5c518;      /* amarelo */
     color: #000;                    /* texto preto */
@@ -235,6 +231,48 @@ main {
     transition: all 0.3s ease;      /* animação suave no hover */
     cursor: pointer;                /* mostra o cursor de clique */
     display: inline-block;          /* mantém o formato de botão */
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  max-width: 420px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.campo label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.campo textarea {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border: 1.8px solid #cfcfcf;
+  resize: none;
+  min-height: 44px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+  background: #fafafa;
+}
+
+#coment {
+  min-height: 90px;
+}
+
+.campo textarea:focus {
+  border-color: #FFD43B; /* mesmo tom do botão */
+  box-shadow: 0 0 0 3px rgba(255, 212, 59, 0.35);
+  outline: none;
+  background: #fff;
 }
 
 /* avaliacoes end */
