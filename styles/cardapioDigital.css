@@ -19,7 +19,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    background-color: #003366;
     margin-top: 10px;
 }
 
@@ -30,6 +30,7 @@ main {
 
 .header-logo-nome p {
     margin-left: 20px;
+    color: white;
 }
 
 .header-logo {
@@ -46,6 +47,13 @@ main {
 .nav-link {
     padding-left: 10px;
     padding-right: 10px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.nav-link-selected {
+    text-decoration: underline;
 }
 
 /* header end */
@@ -141,10 +149,16 @@ main {
 .cardapio-content h1 {
     padding-top: 5px;
     padding-bottom: 20px;
+    color: #003366;
 }
 
 .cardapio-content h2 {
     padding-bottom: 20px;
+    color: #003366;
+}
+
+.cardapio-content p {
+    padding-bottom: 10px;
 }
 
 /* cardapio end */
