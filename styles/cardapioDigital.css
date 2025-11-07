@@ -24,7 +24,7 @@ main {
     align-items: center;
     justify-content: space-between;
     background-color: #003366;
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .header-logo-nome {
@@ -246,9 +246,8 @@ main {
 
 .campo label {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 6px;
-  color: #333;
 }
 
 .campo textarea {
