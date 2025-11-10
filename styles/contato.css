@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  
+}
+
+main {
+    background-color: #e1e1e1;
+}
+ 
+/* header start */
+
+.ru-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003366;
+    padding-top: 10px;
+}
+
+.header-logo-nome {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-nome p {
+    margin-left: 20px;
+    color: white;
+}
+
+.header-logo {
+    width: 100px;
+    height: 73px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header-nav {
+    margin-right: 70px;
+}
+
+.nav-link {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.nav-link-selected {
+    text-decoration: underline;
+}
+
+/* header end */
+
+/* main start */
+
+.main-container {
+    padding-bottom: 50px;
+}
+.contato-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: #003366;
+}
+
+.box-contato-container {
+    background-color: red;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15%;
+}
+
+.contato-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-left h1 {
+    margin-left: 60px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 20px;
+}
+
+input {
+    border: none;
+    background-color: #c8c8c8;
+    border-radius: 3px;
+    height: 40px;
+    width: 350px;
+    padding-left: 5px;
+}
+ input:focus {
+    outline: none;
+    box-shadow: none; /* caso o navegador aplique sombra */
+    border: none;     /* se quiser remover qualquer borda também */
+ }
+
+#mensagem {
+    height: 100px;
+}
+
+#mensagem::placeholder {
+    text-align: left;
+    vertical-align: top; 
+}
+
+.botao-enviar {
+    background-color: #f5c518;      /* amarelo */
+    color: #000;                    /* texto preto */
+    border: none;                   /* sem borda */
+    border-radius: 8px;             /* bordas arredondadas */
+    padding: 10px 25px;             /* espaçamento interno */
+    font-weight: 600;               /* texto mais forte */
+    text-decoration: none;          /* remove o sublinhado */
+    font-size: 16px;                /* tamanho da fonte */
+    transition: all 0.3s ease;      /* animação suave no hover */
+    cursor: pointer;                /* mostra o cursor de clique */
+    display: inline-block;
+    margin-left: 60px;
+    margin-right: 0px;
+}
+
+.contato-right h1 {
+    color: #003366;
+}
+
+.linha-info {
+    display: flex;
+    height: 30px;
+    margin: 20px 0;
+}
+
+.linha-info p {
+    color: rgb(27, 27, 27);
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.span-info {
+    font-weight: 600;
+    color: #003366;
+    padding-right: 2px;
+}
+
+.icons-info {
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    color: #003366;
+}
+
+/* main end */
+
+/* footer start */
+
+footer {
+    height: 300px;
+    background-color: #003366;
+    color: white;
+}
+
+.footer-content {
+    margin-left: 180px;
+    margin-right: 180px;
+    
+    height: 300px;
+}
+
+.footer-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.footer-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.botao-contato-footer {
+    background-color: #f5c518;      /* amarelo */
+    color: #000;                    /* texto preto */
+    border: none;                   /* sem borda */
+    border-radius: 8px;             /* bordas arredondadas */
+    padding: 10px 25px;             /* espaçamento interno */
+    font-weight: 600;               /* texto mais forte */
+    text-decoration: none;          /* remove o sublinhado */
+    font-size: 16px;                /* tamanho da fonte */
+    transition: all 0.3s ease;      /* animação suave no hover */
+    cursor: pointer;                /* mostra o cursor de clique */
+    display: inline-block;
+}
+
+.social-footer {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.social-footer .icon {
+  font-size: 24px;
+  padding: 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4;
+  transition: 0.3s;
+}
+
+/* Cores dos ícones (opcional, pode trocar pro seu tema) */
+.instagram { color: #d62976; }
+.youtube { color: #ff0000; }
+.website { color: #333; }
+
+.footer-line {
+  width: 100%;        /* largura da linha */
+  border: none;
+  border-top: 1px solid #ccc; /* cor da linha */
+}
