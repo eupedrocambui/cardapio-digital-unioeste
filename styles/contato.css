@@ -71,18 +71,18 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 35px;
     color: #003366;
-}
-
-.box-contato-container {
-    background-color: red;
 }
 
 .contato-container {
     display: flex;
     justify-content: space-between;
     margin: 0 15%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px; 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
 }
 
 .contato-left {
