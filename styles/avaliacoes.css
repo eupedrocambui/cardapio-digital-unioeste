@@ -154,6 +154,26 @@ main {
     height: 57px;
 }
 
+.avaliacao-bottom {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container-refeicao-avaliada {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.refeicao {
+    margin: 0 6px;
+    background-color: #003366; 
+    border-radius: 15px;
+    padding: 4px 10px;
+}
+
+.refeicao p {
+        color: white;
+}
 /* avaliacoes end */
 
 /* footer start */
