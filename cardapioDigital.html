@@ -41,7 +41,7 @@
         <div class="main">
             <section id="cardapio" class="cardapio">
                 <div class="cardapio-content">
-                    <h1>Cardápio de Hoje - 04 de Novembro de 2025</h1>
+                    <h1>Cardápio de Hoje - <span class="js-data-cardapio">04 de Novembro de 2025</span></h1>
                     <h2>Almoço</h2>
                     <p>Salada</p>
                     <p>Guarnições</p>
@@ -65,8 +65,8 @@
                 <p>Sua avaliação geral:</p>
                 <img class="estrelas" src="images/rating_stars.png" alt="Estrelas">
                  <div class="nota">
-                    <input type="range" min="0" max="5" step="0.1" value="5.0" id="rangeNota">
-                    <span id="valorNota">5.0</span>
+                    <input class="rangeNota" type="range" min="0" max="5" step="0.5" value="5.0" id="rangeNota">
+                    <span class="valorNota" id="valorNota">5.0</span>
                 </div>
 
                 <div class="campo">
@@ -125,5 +125,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+    <script type="module" src="scripts/cardapioDigital.js"></script>
 </body>
 </html>
