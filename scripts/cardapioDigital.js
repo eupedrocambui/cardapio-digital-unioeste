@@ -6,6 +6,13 @@
     Bebida bebida
 */
 
+// retorna os textos das comidas (to fznd aq)
+for (const categoria in refeicao) {
+    const itens = refeicao[categoria];
+    const texto = `${categoria}: ${itens.join(', ')}`;
+    console.log(texto);
+}
+
 // data do cardapio
 dayjs.locale('pt-br');
 const today = dayjs().format('DD [de] MMMM [de] YYYY');
@@ -25,7 +32,7 @@ const cardapio = {
         'Arroz',
         'Feijão',
         'Macarrão',
-        'Batata'
+        'Batata Assada'
     ],
     proteinas: [
         'Frango',
@@ -39,7 +46,9 @@ const cardapio = {
     ]
 };
 
-
+// gerar o html do cardapio a partir do objeto
+const saladaElem = document.querySelector('.js-salada');
+// const saladaText = 
 
 
 
