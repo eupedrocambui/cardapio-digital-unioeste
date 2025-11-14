@@ -48,11 +48,12 @@ const cardapio = {
 
 // input 'avalie sua refeicao'
 const inputNotaElem = document.querySelector('.rangeNota');
-console.log(inputNotaElem);
 const spanNotaElem = document.querySelector('.valorNota');
-console.log(spanNotaElem);
+const starsElem = document.querySelector('.estrelas');
 
 inputNotaElem.addEventListener('input', () => {
-    console.log(1);
-    spanNotaElem.textContent = inputNotaElem.value;
+    const nota = inputNotaElem.value;
+
+    spanNotaElem.textContent = nota;
+    starsElem.src = `images/${nota}_stars.png`;
 });
