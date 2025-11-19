@@ -1,0 +1,2 @@
+Adicionar cardápio do RU do campus (shiro)
+Resposividade para mobile

@@ -42,13 +42,54 @@
             <section id="cardapio" class="cardapio">
                 <div class="cardapio-content">
                     <h1>Cardápio de Hoje - <span class="js-data-cardapio">04 de Novembro de 2025</span></h1>
-                    <h2>Almoço</h2>
-                    <p class="js-salada">Salada: Alface, Tomate</p>
-                    <p class="js-guarnicoes">Guarnições: Arroz, Feijão, Macarrão, Batata Assada</p>
-                    <p class="js-proteinas">Proteínas: Frango, Ovo Frito</p>
-                    <p class="js-sobremesa">Sobremesa: Mousee de Chocolate</p>
-                    <p class="js-bebida">Bebida: Suco de Uva</p>
+                    <h2>Almoço - Itaipu Parquetec</h2>
+                    <div class="categoria-comida">
+                        <p class="js-salada">Salada:</p>
+                        <div class="comida">Alface</div>
+                        <div class="comida">Tomate</div>
+                    </div>
+                    
+                    <div class="categoria-comida">
+                        <p class="js-guarnicoes">Guarnições:</p>
+                    </div>
+                    
+                    <div class="categoria-comida">
+                        <p class="js-proteinas">Proteínas:</p>
+                    </div>
+                    
+                    <div class="categoria-comida">
+                        <p class="js-sobremesa">Sobremesa:</p>
+                    </div>
+                    
+                    <div class="categoria-comida">
+                        <p class="js-bebida">Bebida:</p>
+                    </div>
+
+                    <h2>Almoço - Campus Unioeste</h2>
+                    <div class="categoria-comida">
+                        <p class="js-salada">Salada:</p>
+                        <div class="comida">Alface</div>
+                        <div class="comida">Tomate</div>
+                    </div>
+                    
+                    <div class="categoria-comida">
+                        <p class="js-guarnicoes">Guarnições:</p>
+                    </div>
+                    
+                    <div class="categoria-comida">
+                        <p class="js-proteinas">Proteínas:</p>
+                    </div>
+                    
+                    <div class="categoria-comida">
+                        <p class="js-sobremesa">Sobremesa:</p>
+                    </div>
+                    
+                    <div class="categoria-comida">
+                        <p class="js-bebida">Bebida:</p>
+                    </div>
+                    
                 </div>
+                
             </section>
         </div>
 
@@ -72,6 +113,22 @@
                 <div class="campo">
                     <label for="name">Seu nome:</label>
                     <textarea id="name" placeholder="Ex: Pedro"></textarea>
+                </div>
+
+                <div class="campo">
+                    <label>Seu campus:</label>
+
+                    <div class="opcoes-campus">
+                        <label>
+                            <input id="js-campus-unioeste" type="radio" name="campus" value="Campus Unioeste" checked>
+                            Campus Unioeste
+                        </label>
+
+                        <label>
+                            <input type="radio" name="campus" value="Itaipu Parquetec">
+                            Itaipu Parquetec
+                        </label>
+                    </div>
                 </div>
 
                 <div class="campo">
