@@ -9,57 +9,17 @@
 // Criar o array de avaliacoes no local storage
 let avaliacoes = JSON.parse(localStorage.getItem('avaliacoes')) || [];
 
-// Botao Enviar da section avaliações
-const botaoEnviarElem = document.querySelector('.botao-enviar');
-botaoEnviarElem.addEventListener('click', () => {
-    // Elementos no HTML
-    const rangeNotaElem = document.querySelector('.rangeNota');
-    const nomeElem = document.getElementById('name');
-    const campusInputElem = document.querySelector('input[name="campus"]:checked');
-    const campusUnioesteRadioElem = document.getElementById('js-campus-unioeste');
-    const comentarioElem = document.getElementById('coment');
 
-    // Valores dos elementos
-    const nota = rangeNotaElem.value;
-    const nome = nomeElem.value || 'Nome não informado';
-    const campus = campusInputElem.value;
-    const comentario = comentarioElem.value;
-
-    // Resetando o range, nome, campus e comentario
-    rangeNotaElem.value = 5;
-    nomeElem.value = '';
-    campusUnioesteRadioElem.checked = true;
-    comentarioElem.value = '';
-    alert('Avaliação enviada com sucesso!');
-
-    // Guardando a avaliacao no local storage
-    const avaliacao = {
-        nota: nota,
-        nome: nome,
-        campus: campus,
-        comentario: comentario
-    }
-
-    avaliacoes.unshift(avaliacao);
-    localStorage.setItem('avaliacoes', avaliacoes);
-}); 
-
-// data do cardapio
-dayjs.locale('pt-br');
-const today = dayjs().format('DD [de] MMMM [de] YYYY');
-
-const dataCardapioElem = document.querySelector('.js-data-cardapio');
-dataCardapioElem.innerHTML = today;
 
 // objeto cardapio do dia
-const cardapio = {
+const cardapioItaipu = {
     salada: [
         'Alface',
         'Tomate'
     ],
     guarnicoes: [
-        'Arroz',
-        'Feijão',
+        'Arroz Branco',
+        'Feijão Preto',
         'Macarrão',
         'Batata Assada'
     ],
@@ -75,10 +35,81 @@ const cardapio = {
     ]
 };
 
+const cardapioCampus = {
+    salada: [
+        'Alface',
+        'Cenoura Ralada'
+    ],
+    guarnicoes: [
+        'Arroz Branco',
+        'Feijão Carioca',
+        'Purê de Batata',
+    ],
+    proteinas: [
+        'Sobrecoxa Assada',
+        'Carne Moída'
+    ],
+    sobremesa: [
+        'Gelatina'
+    ],
+    bebida: [
+        'Suco de Laranja'
+    ]
+};
+
+const arrayRefeicaoItaipu = Object.values(cardapioItaipu).flat();
+const arrayRefeicaoCampus = Object.values(cardapioCampus).flat();
+
+
+// Botao Enviar da section avaliações
+const botaoEnviarElem = document.querySelector('.botao-enviar');
+botaoEnviarElem.addEventListener('click', () => {
+    // Elementos no HTML
+    const rangeNotaElem = document.querySelector('.rangeNota');
+    const nomeElem = document.getElementById('name');
+    const campusInputElem = document.querySelector('input[name="campus"]:checked');
+    const campusUnioesteRadioElem = document.getElementById('js-campus-unioeste');
+    const comentarioElem = document.getElementById('coment');
+    const valorNotaElem = document.getElementById('valorNota');
+    const estrelasElem = document.getElementById('estrelas');
+
+    // Valores dos elementos
+    const nota = rangeNotaElem.value;
+    const nome = nomeElem.value || 'Nome não informado';
+    const campus = campusInputElem.value;
+    const comentario = comentarioElem.value;
+   
+    // Resetando o range, nome, campus e comentario
+    rangeNotaElem.value = 5;
+    nomeElem.value = '';
+    campusUnioesteRadioElem.checked = true;
+    comentarioElem.value = '';
+    valorNotaElem.innerHTML = '5';
+    estrelasElem.src = "images/5_stars.png";
+    alert('Avaliação enviada com sucesso!');
+
+    // Guardando a avaliacao no local storage
+    const avaliacao = {
+        nota: nota,
+        nome: nome,
+        campus: campus,
+        comentario: comentario,
+        data: dayjs().format('DD [de] MMMM, YYYY'),
+        refeicao: (campus === 'Campus Unioeste') ? arrayRefeicaoCampus : arrayRefeicaoItaipu
+    }
+
+    avaliacoes.unshift(avaliacao);
+    localStorage.setItem('avaliacoes', JSON.stringify(avaliacoes));
+}); 
 
 
 
+// data do cardapio
+dayjs.locale('pt-br');
+const today = dayjs().format('DD [de] MMMM [de] YYYY');
 
+const dataCardapioElem = document.querySelector('.js-data-cardapio');
+dataCardapioElem.innerHTML = today;
 
 
 

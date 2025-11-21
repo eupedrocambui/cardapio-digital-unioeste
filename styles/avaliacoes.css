@@ -83,7 +83,6 @@ main {
 /* avaliacoes start */
 
 .avaliacoes-container {
-    height: 300px;
     margin-top: 30px;
     padding: 20px;
     border-radius: 30px;
@@ -165,10 +164,11 @@ main {
 }
 
 .refeicao {
-    margin: 0 6px;
-    background-color: #003366; 
-    border-radius: 15px;
+    background-color: #003366;
+    margin-left: 6px;
+    margin-right: 6px;
     padding: 4px 10px;
+    border-radius: 20px;
 }
 
 .refeicao p {
