@@ -11,7 +11,7 @@ let avaliacoes = JSON.parse(localStorage.getItem('avaliacoes')) || [];
 
 
 
-// objeto cardapio do dia
+// Objeto dos cardapios do dia
 const cardapioItaipu = {
     salada: [
         'Alface',
@@ -60,6 +60,16 @@ const cardapioCampus = {
 const arrayRefeicaoItaipu = Object.values(cardapioItaipu).flat();
 const arrayRefeicaoCampus = Object.values(cardapioCampus).flat();
 
+
+
+// Função para passar o cardápio do objeto JS para o HTML
+function renderCardapio(objetoCardapio, campus) {
+    /*
+        Parei aqui, faz a funcao para ler o objeto e passar para o cardapio no html
+        essa funcao deve ler a chave do objeto e colocar os valores no html
+        salada -> alface, tomate -> js-${categoria}-${campus}
+    */
+}
 
 // Botao Enviar da section avaliações
 const botaoEnviarElem = document.querySelector('.botao-enviar');
