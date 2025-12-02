@@ -58,6 +58,31 @@ function refeicaoAvaliadaHTML(arrayRefeicao) {
 
 // funcao principal para gerar o HTML das avaliacoes
 function renderAvaliacoes() {
+    // verificar se não há avaliações
+    if (avaliacoes.length === 0) {
+        const avisoHTML = 
+        `
+            <div class="avaliacao-vazia">
+
+                <div class="avaliacao-vazia-left">
+                    <img src="images/chef.png" alt="Sem avaliações" class="img-vazio">
+                </div>
+
+                <div class="avaliacao-vazia-right">
+                    <h2>Nenhuma avaliação disponível no momento</h2>
+                    <p>Seja o primeiro a deixar sua opinião!</p>
+
+                    <a href="cardapioDigital.html#avaliar" class="btn-avaliar">
+                    Deixar uma avaliação
+                    </a>
+                </div>
+
+            </div>
+        `;
+
+        return avisoHTML;
+    }
+
     let avaliacoesHTML = '';
 
     avaliacoes.forEach((avaliacaoObject) => {

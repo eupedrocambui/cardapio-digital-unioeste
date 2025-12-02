@@ -13,6 +13,19 @@ body {
   background-color: #e1e1e1;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 main {
     max-width: 1536px;
     width: 80%;
@@ -176,6 +189,57 @@ main {
         color: white;
 }
 /* avaliacoes end */
+
+/* aviso nenhuma avaliacao start */
+
+.avaliacao-vazia {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: rgba(0,0,0,0.15) 0px 5px 15px;
+  margin-top: 30px;
+}
+
+.avaliacao-vazia-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.img-vazio {
+  width: 200px;
+  max-width: 100%;
+}
+
+.avaliacao-vazia-right {
+  flex: 2;
+}
+
+.avaliacao-vazia-right h2 {
+  color: #003366;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.avaliacao-vazia-right p {
+  color: #475569;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn-avaliar {
+  background-color: #f5c518;
+  color: #000;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: .3s;
+}
+
+/* aviso nenhuma avaliacao end */
 
 /* footer start */
 
