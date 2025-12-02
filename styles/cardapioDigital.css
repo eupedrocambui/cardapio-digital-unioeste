@@ -180,6 +180,11 @@ main {
   padding: 5px 8px;
   border-radius: 20px;
 }
+
+.js-linha-alimentos {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* cardapio end */
 
 /* avaliacoes start */

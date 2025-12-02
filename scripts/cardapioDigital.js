@@ -53,7 +53,8 @@ const cardapioCampus = {
         'Gelatina'
     ],
     bebida: [
-        'Suco de Laranja'
+        'Suco de Laranja',
+        'Suco de Abacaxi'
     ]
 };
 
@@ -64,12 +65,25 @@ const arrayRefeicaoCampus = Object.values(cardapioCampus).flat();
 
 // Função para passar o cardápio do objeto JS para o HTML
 function renderCardapio(objetoCardapio, campus) {
-    /*
-        Parei aqui, faz a funcao para ler o objeto e passar para o cardapio no html
-        essa funcao deve ler a chave do objeto e colocar os valores no html
-        salada -> alface, tomate -> js-${categoria}-${campus}
-    */
+    for (const categoria in objetoCardapio) {
+        const arrayAlimentos = objetoCardapio[categoria];
+
+        let alimentosHTML = ``;
+        arrayAlimentos.forEach((alimento) => {
+            alimentosHTML += 
+            `
+                <div class="comida">${alimento}</div>
+            `;
+        });
+
+        document.querySelector(`.js-${categoria}-${campus}`).innerHTML = alimentosHTML;
+    }
 }
+
+renderCardapio(cardapioItaipu, 'itaipu');
+renderCardapio(cardapioCampus, 'unioeste');
+
+
 
 // Botao Enviar da section avaliações
 const botaoEnviarElem = document.querySelector('.botao-enviar');
