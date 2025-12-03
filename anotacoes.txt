@@ -1,2 +1,4 @@
-Adicionar cardápio do RU do campus (shiro)
+Adicionar cardápio do RU do campus (shiro) [FEITO]
 Resposividade para mobile
+Página de obrigado contato
+Página de obrigado apos enviar avaliacao

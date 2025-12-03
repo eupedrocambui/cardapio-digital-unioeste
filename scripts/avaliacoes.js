@@ -72,7 +72,7 @@ function renderAvaliacoes() {
                     <h2>Nenhuma avaliação disponível no momento</h2>
                     <p>Seja o primeiro a deixar sua opinião!</p>
 
-                    <a href="cardapioDigital.html#avaliar" class="btn-avaliar">
+                    <a href="index.html#avaliar" class="btn-avaliar">
                     Deixar uma avaliação
                     </a>
                 </div>
