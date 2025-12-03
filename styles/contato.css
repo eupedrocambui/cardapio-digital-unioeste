@@ -116,11 +116,12 @@ input {
     width: 350px;
     padding-left: 8px;
 }
- input:focus {
+
+input:focus {
     outline: none;
     box-shadow: none; /* caso o navegador aplique sombra */
     border: none;     /* se quiser remover qualquer borda também */
- }
+}
 
 #mensagem {
     height: 100px;
@@ -129,6 +130,7 @@ input {
     border-radius: 10px;
     resize: none;
     padding: 8px;
+    font-family: sans-serif;
 }
 
 #mensagem:focus {
