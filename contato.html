@@ -53,12 +53,15 @@
 
                             <div class="form">
                                 <label for="mensagem">Mensagem</label>
-                                <!--<input type="text" name="message" id="mensagem" required>-->
                                 <textarea name="message" id="mensagem" placeholder="Sua mensagem"></textarea>
                             </div>
-
+                            
+                            <!-- desabilitar captcha -->
                             <input type="hidden" name="_captcha" value="false">
 
+                            <!-- página de obrigado -->
+                             <input type="hidden" name="_next" value="obrigado.html">
+                             
                             <button class="botao-enviar" type="submit">Enviar Mensagem</button>
 
                         </form>
