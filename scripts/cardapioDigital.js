@@ -110,7 +110,6 @@ botaoEnviarElem.addEventListener('click', () => {
     comentarioElem.value = '';
     valorNotaElem.innerHTML = '5';
     estrelasElem.src = "images/5_stars.png";
-    alert('Avaliação enviada com sucesso!');
 
     // Guardando a avaliacao no local storage
     const avaliacao = {
@@ -124,6 +123,9 @@ botaoEnviarElem.addEventListener('click', () => {
 
     avaliacoes.unshift(avaliacao);
     localStorage.setItem('avaliacoes', JSON.stringify(avaliacoes));
+
+    // Carregando página de obrigado
+    window.location.href = "obrigadoAvaliacao.html";
 }); 
 
 
