@@ -78,6 +78,7 @@ main {
 .contato-container {
     display: flex;
     justify-content: space-between;
+    gap: 130px;
     margin: 0 15%;
     background-color: white;
     border-radius: 20px;
@@ -113,7 +114,7 @@ input {
     border-radius: 10px;
     height: 40px;
     width: 350px;
-    padding-left: 5px;
+    padding-left: 8px;
 }
  input:focus {
     outline: none;
@@ -123,11 +124,16 @@ input {
 
 #mensagem {
     height: 100px;
+    border: none;
+    background-color: #e1e1e1;
+    border-radius: 10px;
+    resize: none;
+    padding: 8px;
 }
 
-#mensagem::placeholder {
-    text-align: left;
-    vertical-align: top; 
+#mensagem:focus {
+    outline: none;
+    border: none;
 }
 
 .botao-enviar {
@@ -146,6 +152,12 @@ input {
     margin-right: 0px;
 }
 
+.contato-right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
 .contato-right h1 {
     color: #003366;
 }
@@ -153,7 +165,7 @@ input {
 .linha-info {
     display: flex;
     height: 30px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .linha-info p {
