@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="ru-header">
         <div class="header-logo-nome">
             <a href="index.html">
@@ -24,71 +25,82 @@
         </nav>
     </header>
 
+    <!-- Main -->
     <main>
         <div class="main-container">
             <div class="contato-titulo">
                 <h1>Fale Conosco</h1>
             </div>
-
-            
                 <div class="contato-container">
+
+                    <!-- Formulário de Contato -->
                     <div class="contato-left">
                         <h1>Suas Informações</h1>
                         <form action="https://formsubmit.co/teste.pedrocambui@gmail.com" method="POST">
 
+                            <!-- Nome -->
                             <div class="form">
                                 <label for="name">Nome Completo</label>
                                 <input placeholder="Seu nome" type="text" name="name" id="name" required>
                             </div>
                             
+                            <!-- E-mail -->
                             <div class="form">
                                 <label for="email">E-mail</label>
                                 <input placeholder='ex: "usuario@gmail.com"' type="email" name="email" id="email" required>
                             </div>
 
+                            <!-- Assunto -->
                             <div class="form">
                                 <label for="">Assunto</label>
                                 <input placeholder='ex: "Falta de mesas no refeitório"' type="text" name="_subject" id="assunto" required>
-                            </div>
+                            </div>  
 
+                            <!-- Mensagem -->
                             <div class="form">
                                 <label for="mensagem">Mensagem</label>
                                 <textarea name="message" id="mensagem" placeholder="Sua mensagem"></textarea>
                             </div>
                             
-                            <!-- desabilitar captcha -->
+                            <!-- Desabilitar captcha -->
                             <input type="hidden" name="_captcha" value="false">
 
-                            <!-- página de obrigado -->
-                             <input type="hidden" name="_next" value="https://eupedrocambui.github.io/cardapio_digital_faculdade/obrigado.html">
+                            <!-- Página de obrigado -->
+                            <input type="hidden" name="_next" value="https://eupedrocambui.github.io/cardapio_digital_faculdade/obrigado.html">
                              
+                            <!-- Botão enviar -->
                             <button class="botao-enviar" type="submit">Enviar Mensagem</button>
-
                         </form>
-                        
                     </div>
+
+                    <!-- Informações de Contato -->
                     <div class="contato-right">
                         <h1>Informações de Contato</h1>
+                        <!-- Endereço 1 -->
                         <div class="linha-info">
                             <i class="fa-solid fa-location-dot icons-info"></i>
                             <p><span class="span-info">Endereço 1:</span> Av. Tarquínio Joslin dos Santos, 1300 - Lot. Universitário das Américas, Foz do Iguaçu - PR</p>
                         </div>
 
+                        <!-- Endereço 2 -->
                         <div class="linha-info">
                             <i class="fa-solid fa-location-dot icons-info"></i>
                             <p><span class="span-info">Endereço 2:</span> Itaipu Parquetec, Foz do Iguaçu - PR</p>
                         </div>
                         
+                        <!-- Telefone -->
                         <div class="linha-info">
                             <i class="fa-solid fa-phone icons-info"></i>
                             <p><span class="span-info">Telefone:</span> (45) 91234-5678</p>
                         </div>
 
+                        <!-- E-mail -->
                         <div class="linha-info">
                             <i class="fa-solid fa-envelope icons-info"></i>
                             <p><span class="span-info">E-mail:</span> restaurante@unioeste.com</p>
                         </div>
                         
+                        <!-- Horário de atendimento -->
                         <div class="linha-info">
                             <i class="fa-solid fa-clock icons-info"></i>
                             <p><span class="span-info">Horário de Atendimento:</span>Seg à Sex, 11h30 às 14h</p>
@@ -98,6 +110,7 @@
         </div>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-up">
