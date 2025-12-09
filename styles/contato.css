@@ -218,7 +218,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 40px;
+}
+
+.footer-ru-titulo {
+  padding-bottom: 15px;
+  font-size: 24px;
 }
 
 .botao-contato-footer {
