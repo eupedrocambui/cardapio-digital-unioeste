@@ -59,6 +59,7 @@ main {
 /* header end */
 
 /* main start */
+
 main {
     display: flex;
     justify-content: center;
@@ -169,16 +170,16 @@ footer {
 }
 
 .botao-contato-footer {
-    background-color: #f5c518;      /* amarelo */
-    color: #000;                    /* texto preto */
-    border: none;                   /* sem borda */
-    border-radius: 8px;             /* bordas arredondadas */
-    padding: 10px 25px;             /* espaçamento interno */
-    font-weight: 600;               /* texto mais forte */
-    text-decoration: none;          /* remove o sublinhado */
-    font-size: 16px;                /* tamanho da fonte */
-    transition: all 0.3s ease;      /* animação suave no hover */
-    cursor: pointer;                /* mostra o cursor de clique */
+    background-color: #f5c518;     
+    color: #000;                    
+    border: none;                   
+    border-radius: 8px;            
+    padding: 10px 25px;             
+    font-weight: 600;               
+    text-decoration: none;          
+    font-size: 16px;               
+    transition: all 0.3s ease;      
+    cursor: pointer;               
     display: inline-block;
 }
 
@@ -201,15 +202,14 @@ footer {
   transition: 0.3s;
 }
 
-/* Cores dos ícones (opcional, pode trocar pro seu tema) */
 .instagram { color: #003366; }
 .youtube { color:#003366; }
 .website { color: #003366; }
 
 .footer-line {
-  width: 100%;        /* largura da linha */
+  width: 100%;        
   border: none;
-  border-top: 1px solid #ccc; /* cor da linha */
+  border-top: 1px solid #ccc; 
 }
 
 /* footer end */

@@ -2,3 +2,4 @@ Adicionar cardápio do RU do campus (shiro) [FEITO]
 Resposividade para mobile
 Página de obrigado contato [FEITO]
 Página de obrigado apos enviar avaliacao [FEITO]
+Refazer a parte do banner da main (montar dedign novo e codar)

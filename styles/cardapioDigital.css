@@ -73,12 +73,12 @@ main {
 }
 
 .banner {
-  background-image: url('../images/banner_ru.png'); /* coloque sua imagem */
-  background-size: cover; /* faz a imagem preencher o container */
+  background-image: url('../images/banner_ru.png');
+  background-size: cover; 
   background-position: center;
   height: 300px;
   width: 90vw;
-  position: relative; /* necessário para posicionar o conteúdo dentro */
+  position: relative; 
   border-radius: 12px;
   overflow: hidden;
   margin-top: 15px;
@@ -90,17 +90,17 @@ main {
 }
 
 .conteudo-banner {
-    position: absolute; /* para sobrepor na imagem */
-    background: rgba(0, 56, 112, 0.75); /* azul com transparência */
+    position: absolute; 
+    background: rgba(0, 56, 112, 0.75); 
     color: white;
     padding: 1.5rem 2rem;
     border-radius: 8px;
     max-width: 400px;
 
-    display: flex;              /* ativa o flexbox */
-    flex-direction: column;     /* coloca os itens em coluna (um em cima do outro) */
-    justify-content: center;    /* centraliza verticalmente */
-    align-items: center;        /* centraliza horizontalmente */
+    display: flex;              
+    flex-direction: column;    
+    justify-content: center;   
+    align-items: center;
     text-align: center;
 }
 
@@ -119,22 +119,22 @@ main {
 }
 
 .botao-banner {
-  background-color: #f5c518;      /* amarelo */
-  color: #000;                    /* texto preto */
-  border: none;                   /* sem borda */
-  border-radius: 8px;             /* bordas arredondadas */
-  padding: 10px 25px;             /* espaçamento interno */
-  font-weight: 600;               /* texto mais forte */
-  text-decoration: none;          /* remove o sublinhado */
-  font-size: 16px;                /* tamanho da fonte */
-  transition: all 0.3s ease;      /* animação suave no hover */
-  cursor: pointer;                /* mostra o cursor de clique */
-  display: inline-block;          /* mantém o formato de botão */
+  background-color: #f5c518;      
+  color: #000;                    
+  border: none;                   
+  border-radius: 8px;            
+  padding: 10px 25px;             
+  font-weight: 600;              
+  text-decoration: none;         
+  font-size: 16px;               
+  transition: all 0.3s ease;      
+  cursor: pointer;               
+  display: inline-block;         
 }
 
 .btn-yellow:hover {
-  background-color: #e0b713;      /* amarelo mais escuro no hover */
-  transform: scale(1.05);         /* leve aumento */
+  background-color: #e0b713;      
+  transform: scale(1.05);         
 }
 
 /* banner end */
@@ -186,6 +186,7 @@ main {
   flex-wrap: wrap;
   gap: 10px;
 }
+
 /* cardapio end */
 
 /* avaliacoes start */
@@ -198,10 +199,10 @@ main {
     background-color: white;
     border-radius: 12px;
 
-    display: flex;              /* ativa o flexbox */
-    flex-direction: column;     /* coloca os itens em coluna (um em cima do outro) */
-    justify-content: center;    /* centraliza verticalmente */
-    align-items: center;        /* centraliza horizontalmente */
+    display: flex;              
+    flex-direction: column;    
+    justify-content: center;    
+    align-items: center;       
     text-align: center;
 
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -219,7 +220,7 @@ main {
 }
 
 .food-icon {
-  background-color: #2ecc71; /* Verde */
+  background-color: #2ecc71; 
   color: white;
   width: 40px;
   height: 40px;
@@ -236,17 +237,17 @@ main {
 }
 
 .botao-enviar {
-    background-color: #f5c518;      /* amarelo */
-    color: #000;                    /* texto preto */
-    border: none;                   /* sem borda */
-    border-radius: 8px;             /* bordas arredondadas */
-    padding: 10px 25px;             /* espaçamento interno */
-    font-weight: 600;               /* texto mais forte */
-    text-decoration: none;          /* remove o sublinhado */
-    font-size: 16px;                /* tamanho da fonte */
-    transition: all 0.3s ease;      /* animação suave no hover */
-    cursor: pointer;                /* mostra o cursor de clique */
-    display: inline-block;          /* mantém o formato de botão */
+    background-color: #f5c518;      
+    color: #000;                   
+    border: none;                 
+    border-radius: 8px;           
+    padding: 10px 25px;            
+    font-weight: 600;             
+    text-decoration: none;        
+    font-size: 16px;               
+    transition: all 0.3s ease;    
+    cursor: pointer;                
+    display: inline-block;        
 }
 
 .campo {
@@ -284,7 +285,7 @@ main {
 }
 
 .campo textarea:focus {
-  border-color: #FFD43B; /* mesmo tom do botão */
+  border-color: #FFD43B; 
   box-shadow: 0 0 0 3px rgba(255, 212, 59, 0.35);
   outline: none;
   background: #fff;
@@ -304,22 +305,20 @@ main {
     cursor: pointer;
     padding: 8px 12px;
     border-radius: 10px;
-    background-color: #fff7d4; /* amarelo suave */
+    background-color: #fff7d4; 
     transition: 0.2s ease;
     border: 1px solid #f0d46a;
 }
 
-/* Efeito hover */
 .opcoes-campus label:hover {
     background-color: #ffef9a;
 }
 
-/* ⭕ Estilizando a bolinha (radio) */
 .opcoes-campus input[type="radio"] {
     appearance: none;
     width: 18px;
     height: 18px;
-    border: 2px solid #f0c200;      /* borda amarela */
+    border: 2px solid #f0c200;     
     border-radius: 50%;
     display: inline-block;
     position: relative;
@@ -327,19 +326,17 @@ main {
     transition: 0.2s ease-in-out;
 }
 
-/* bolinha preenchida quando marcada */
 .opcoes-campus input[type="radio"]:checked::before {
     content: "";
     width: 10px;
     height: 10px;
-    background-color: #f0c200;      /* amarelo forte */
+    background-color: #f0c200;     
     border-radius: 50%;
     position: absolute;
     top: 2px;
     left: 2px;
 }
 
-/* texto */
 .opcoes-campus label span {
     font-size: 15px;
     color: #5a4b00;
@@ -384,16 +381,16 @@ footer {
 }
 
 .botao-contato-footer {
-    background-color: #f5c518;      /* amarelo */
-    color: #000;                    /* texto preto */
-    border: none;                   /* sem borda */
-    border-radius: 8px;             /* bordas arredondadas */
-    padding: 10px 25px;             /* espaçamento interno */
-    font-weight: 600;               /* texto mais forte */
-    text-decoration: none;          /* remove o sublinhado */
-    font-size: 16px;                /* tamanho da fonte */
-    transition: all 0.3s ease;      /* animação suave no hover */
-    cursor: pointer;                /* mostra o cursor de clique */
+    background-color: #f5c518;     
+    color: #000;                   
+    border: none;                   
+    border-radius: 8px;             
+    padding: 10px 25px;            
+    font-weight: 600;              
+    text-decoration: none;         
+    font-size: 16px;              
+    transition: all 0.3s ease;    
+    cursor: pointer;               
     display: inline-block;
 }
 
@@ -416,13 +413,12 @@ footer {
   transition: 0.3s;
 }
 
-/* Cores dos ícones (opcional, pode trocar pro seu tema) */
 .instagram { color: #003366; }
 .youtube { color:#003366; }
 .website { color: #003366; }
 
 .footer-line {
-  width: 100%;        /* largura da linha */
+  width: 100%;        
   border: none;
-  border-top: 1px solid #ccc; /* cor da linha */
+  border-top: 1px solid #ccc; 
 }
