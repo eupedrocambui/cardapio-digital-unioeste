@@ -413,9 +413,9 @@ footer {
 }
 
 /* Cores dos ícones (opcional, pode trocar pro seu tema) */
-.instagram { color: #d62976; }
-.youtube { color: #ff0000; }
-.website { color: #333; }
+.instagram { color: #003366; }
+.youtube { color:#003366; }
+.website { color: #003366; }
 
 .footer-line {
   width: 100%;        /* largura da linha */
