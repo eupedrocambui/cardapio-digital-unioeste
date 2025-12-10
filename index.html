@@ -26,23 +26,10 @@
         </nav>
     </header>
 
+    <!-- Main (hero, cardápio e avaliações) -->
     <main>
-        <!-- Banner 
-        <div class="main">
-            <section class="banner">
-                <div class="conteudo-banner">
-                    <h2>Sabor e Nutrição Todo Dia</h2>
-                    <p>Feito com carinho e ingredientes de qualidade</p>
-                    <a href="#cardapio">
-                        <button class="botao-banner">Ver Cardápio</button>
-                    </a>
-                </div>
-            </section>
-        </div>
-        -->
-
-        <!-- Banner Novo Teste -->
-        <div class="container-banner">
+        <!-- Hero -->
+        <div class="container-hero">
             <div class="hero">
                 <div class="hero-content">
                     <h1>A Refeição de Qualidade que<br>Você Merece Está Aqui!</h1>
@@ -53,34 +40,33 @@
                 </div>
 
                 <div class="hero-image">
-                    <!-- Coloque sua imagem aqui (500x500)-->
                     <img src="/images/prato_hero.png" alt="Prato">
                 </div>
             </div>
 
+            <!-- Features -->
             <div class="features">
                 <div class="feature">
-                    <!-- Ícone -->
-                    <!-- <div class="icon">🔔</div> -->
+                    <img class="icone_hero" src="images/icone_prato_hero.png" alt="Ícone Prato">
                     <h3>Sabor e Nutrição</h3>
                     <p>Cardápio variado feito por nutricionistas.</p>
                 </div>
 
                 <div class="feature">
-                    <div class="icon">🚚</div>
+                    <img class="icone_hero" src="images/icone_garcom_hero.png" alt="Ícone Atendente">
                     <h3>Atendimento Rápido</h3>
                     <p>Aberto de segunda à sexta, das 11h às 13h30.</p>
                 </div>
 
                 <div class="feature">
-                    <div class="icon">🍽️</div>
+                    <img class="icone_hero" src="images/icone_comida_hero.png" alt="Ícone Comida">
                     <h3>Qualidade</h3>
                     <p>Ingredientes selecionados para uma alimentação saudável.</p>
                 </div>
             </div>
         </div>
 
-        <!-- Cardápio do dia -->
+        <!-- Cardápio -->
         <div class="main">
             <section id="cardapio" class="cardapio">
                 <div class="cardapio-content">
@@ -150,9 +136,10 @@
             </section>
         </div>
 
-        <!-- Avaliar -->
+        <!-- Avaliações -->
         <div id="avaliar" class="main">
             <section class="avaliacoes">
+                <!-- Título -->
                 <div class="avaliacoes-titulo">
                     <h1>Avalie a Refeição do Dia</h1>
                     <div class="food-icon">
@@ -160,6 +147,7 @@
                     </div>
                 </div>
                 
+                <!-- Avaliar (estrelas) -->
                 <p>Sua avaliação geral:</p>
                 <img id="estrelas" class="estrelas" src="images/5_stars.png" alt="Estrelas">
                  <div class="nota">
@@ -167,11 +155,13 @@
                     <span class="valorNota" id="valorNota">5</span>
                 </div>
 
+                <!-- Nome -->
                 <div class="campo">
                     <label for="name">Seu nome:</label>
                     <textarea id="name" placeholder="Ex: Pedro"></textarea>
                 </div>
 
+                <!-- Campus -->
                 <div class="campo">
                     <label>Seu campus:</label>
 
@@ -188,11 +178,13 @@
                     </div>
                 </div>
 
+                <!-- Comentário -->
                 <div class="campo">
                     <label for="coment">Comentários Detalhados:</label>
                     <textarea id="coment" placeholder="O que você achou da comida? (Sabor, temperatura, opções, etc.)"></textarea>
                 </div>
 
+                <!-- Botão enviar -->
                 <div>
                     <button class="botao-enviar">Enviar Avaliação</button>
                 </div>

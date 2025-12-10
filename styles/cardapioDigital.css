@@ -143,7 +143,7 @@ main {
 /* banner novo teste start */
 
 /* --- HERO SECTION --- */
-.container-banner {
+.container-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,7 +155,7 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 60px;
-  background: linear-gradient(to right, #f5c518 65%, #fff1c1 35%);
+  background: linear-gradient(to right, #f5c518 80%, #fff1c1 20%);
   border-top-right-radius: 25px;
   border-top-left-radius: 25px;
   margin-top: 20px;
@@ -236,6 +236,11 @@ main {
 .feature p {
   color: #666;
   font-size: 14px;
+}
+
+.icone_hero {
+  width: 100px;
+  height: 100px;
 }
 
 /* banner novo teste end*/
