@@ -3,4 +3,5 @@ Resposividade para mobile
 Página de obrigado contato [FEITO]
 Página de obrigado apos enviar avaliacao [FEITO]
 Refazer a parte do banner da main (montar dedign novo e codar) [FEITO]
-Carregar footer em todas as paginas usando js
+Carregar footer em todas as paginas usando js [FEITO]
+Carregar css do footer em todas as paginas usando um arquivo css global [FEITO]
