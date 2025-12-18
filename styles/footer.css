@@ -1,15 +1,12 @@
 footer {
-    height: 300px;
     background-color: #003366;
     color: white;
 
 }
 
 .footer-content {
-    margin-left: 180px;
-    margin-right: 180px;
-    
-    height: 300px;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .footer-up {
@@ -29,6 +26,14 @@ footer {
 .footer-ru-titulo {
   padding-bottom: 15px;
   font-size: 24px;
+}
+
+.footer-endereco {
+  padding-right: 50px;
+}
+
+.endereco-up {
+  padding-bottom: 15px;
 }
 
 .botao-contato-footer {
@@ -72,4 +77,53 @@ footer {
   width: 100%;        
   border: none;
   border-top: 1px solid #ccc; 
+}
+
+/* manter elementos escondidos para desktop */
+.logo-footer, .email-footer, .telefone-footer {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  /* utilizar elementos na versão mobile */
+  .logo-footer, .email-footer, .telefone-footer {
+    display: block;
+  }
+
+  .container-img-footer {
+    display: flex;
+  }
+
+  .logo-footer {
+    width: 95px;
+    padding-bottom: 20px;
+  }
+
+  .footer-endereco {
+    padding: 0;
+  }
+
+  .footer-down {
+    flex-direction: column;
+    padding-top: 15px;
+  }
+
+  .horario-atendimento {
+    align-self: flex-start;
+  }
+
+  .email-footer {
+    align-self: flex-start;
+    padding-top: 15px;
+  }
+
+  .telefone-footer {
+    align-self: flex-start;
+    padding-top: 15px;
+  }
+
+  /* manter elementos escondidos para mobile */
+  .footer-ru-titulo, .botao-contato-footer {
+    display: none;
+  }
 }
