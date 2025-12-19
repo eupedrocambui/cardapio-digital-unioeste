@@ -191,6 +191,10 @@ main {
   justify-content: center;
 }
 
+.titulo-cardapio-mobile {
+  text-align: center;
+}
+
 .cardapio-content {
     padding: 15px;
 }
@@ -396,15 +400,24 @@ main {
     padding: 0;
   }
 
+  /* responsividade seção "cardápio" start */
+  .cardapio {
+    width: 100vw;
+    border-radius: 0px;
+  }
+  /* responsividade seção "cardápio" end */
+
+  /* responsividade seção "avaliações" start */
   .avaliacoes {
     width: 100vw;
     border-radius: 0px;
+    margin: 0;
   }
 
   .avaliacoes-titulo {
     padding: 0 10px;
   }
-  
+
   .campo {
     width: 85%;
   }
@@ -412,4 +425,5 @@ main {
   .food-icon {
     display: none;
   }
+  /* responsividade seção "avaliações" end */
 }

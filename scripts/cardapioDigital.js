@@ -133,9 +133,21 @@ botaoEnviarElem.addEventListener('click', () => {
 // data do cardapio
 dayjs.locale('pt-br');
 const today = dayjs().format('DD [de] MMMM [de] YYYY');
+const todayMobile = dayjs().format('DD/MM/YYYY');
 
-const dataCardapioElem = document.querySelector('.js-data-cardapio');
+/*const dataCardapioElem = document.querySelector('.js-data-cardapio');
 dataCardapioElem.innerHTML = today;
+
+const dataCardapioMobileElem = document.querySelector('.js-data-cardapio-mobile');
+dataCardapioMobileElem.innerHTML = todayMobile;*/
+
+if (document.querySelector('.js-data-cardapio')) {
+    const dataCardapioElem = document.querySelector('.js-data-cardapio');
+    dataCardapioElem.innerHTML = today;
+} else {
+    const dataCardapioMobileElem = document.querySelector('.js-data-cardapio-mobile');
+    dataCardapioMobileElem.innerHTML = todayMobile;
+}
 
 
 
