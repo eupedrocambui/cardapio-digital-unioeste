@@ -229,7 +229,12 @@ main {
 .js-linha-alimentos {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
+  row-gap: 20px;
+}
+
+.titulo-cardapio-mobile {
+  display: none;
 }
 
 /* cardapio end */
@@ -404,6 +409,14 @@ main {
   .cardapio {
     width: 100vw;
     border-radius: 0px;
+  }
+
+  .titulo-cardapio-desktop {
+    display: none;
+  }
+
+  .titulo-cardapio-mobile {
+    display: block;
   }
   /* responsividade seção "cardápio" end */
 

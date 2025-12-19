@@ -130,24 +130,16 @@ botaoEnviarElem.addEventListener('click', () => {
 
 
 
-// data do cardapio
+// data do cardápio
 dayjs.locale('pt-br');
-const today = dayjs().format('DD [de] MMMM [de] YYYY');
-const todayMobile = dayjs().format('DD/MM/YYYY');
+const today = dayjs().format('DD [de] MMMM [de] YYYY'); // formatação para desktop
+const todayMobile = dayjs().format('DD/MM/YYYY'); // formatação para mobile
 
-/*const dataCardapioElem = document.querySelector('.js-data-cardapio');
-dataCardapioElem.innerHTML = today;
+const dataCardapioElem = document.querySelector('.js-data-cardapio');
+dataCardapioElem.innerHTML = today; // inserindo data no html (desktop)
 
 const dataCardapioMobileElem = document.querySelector('.js-data-cardapio-mobile');
-dataCardapioMobileElem.innerHTML = todayMobile;*/
-
-if (document.querySelector('.js-data-cardapio')) {
-    const dataCardapioElem = document.querySelector('.js-data-cardapio');
-    dataCardapioElem.innerHTML = today;
-} else {
-    const dataCardapioMobileElem = document.querySelector('.js-data-cardapio-mobile');
-    dataCardapioMobileElem.innerHTML = todayMobile;
-}
+dataCardapioMobileElem.innerHTML = todayMobile; // inserindo data no html (mobile)
 
 
 
