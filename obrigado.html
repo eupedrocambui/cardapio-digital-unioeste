@@ -7,24 +7,12 @@
     <link rel="shortcut icon" href="images/favicon_unioeste.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/obrigado.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="ru-header">
-        <div class="header-logo-nome">
-            <a href="index.html">
-                <img class="header-logo" src="images/logo_unioeste_branca.png" alt="Logo Unioeste">
-            </a>
-            <p>Cardápio Digital RU - Unioeste</p>
-        </div>
-        
-        <nav class="header-nav">
-            <a href="index.html" class="nav-link">Hoje</a>
-            <a href="avaliacoes.html" class="nav-link">Avaliações</a>
-            <a href="contato.html" class="nav-link">Contato / Feedback</a>
-        </nav>
-    </header>
+    <!-- Header (Carregado com JS) -->
+    <div id="header"></div>
 
     <!-- Mensagem de Obrigado (main) -->
     <main>
@@ -48,5 +36,6 @@
     <div id="footer"></div>
 
     <script type="module" src="scripts/footer.js"></script>
+    <script type="module" src="scripts/header.js"></script>
 </body>
 </html>

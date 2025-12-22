@@ -1,0 +1,41 @@
+/* ======== Header ========  */
+.ru-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #003366;
+    padding-top: 10px;
+}
+
+.header-logo-nome {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-nome p {
+    margin-left: 20px;
+    color: white;
+}
+
+.header-logo {
+    width: 100px;
+    height: 73px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header-nav {
+    margin-right: 70px;
+}
+
+.nav-link {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.nav-link-selected {
+    text-decoration: underline;
+}

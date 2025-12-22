@@ -1,12 +1,15 @@
-Adicionar cardápio do RU do campus (shiro) [FEITO]
-Resposividade para mobile
-Página de obrigado contato [FEITO]
-Página de obrigado apos enviar avaliacao [FEITO]
-Refazer a parte do banner da main (montar dedign novo e codar) [FEITO]
-Carregar footer em todas as paginas usando js [FEITO]
-Carregar css do footer em todas as paginas usando um arquivo css global [FEITO]
+[FEITO] Adicionar cardápio do RU do campus (shiro) 
+[FEITO] Página de obrigado contato
+[FEITO] Página de obrigado apos enviar avaliacao 
+[FEITO] Refazer a parte do banner da main (montar dedign novo e codar) 
+[FEITO] Carregar footer em todas as paginas usando js 
+[FEITO] Carregar css do footer em todas as paginas usando um arquivo css global 
+
+Carregar header em todas as paginas usando js
+Carregar css do header em todas as paginas usando um arquivo css global
+Header responsivo com menu hamburguinho
 
 
-Device breakpoints (Resposividade)
+======== Device breakpoints (Resposividade) ========
 1250px (menos disso muda o footer)
 850px (menos disso passa o header para hamburguinho e versao celular)
