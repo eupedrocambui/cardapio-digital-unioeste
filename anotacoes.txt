@@ -4,9 +4,9 @@
 [FEITO] Refazer a parte do banner da main (montar dedign novo e codar) 
 [FEITO] Carregar footer em todas as paginas usando js 
 [FEITO] Carregar css do footer em todas as paginas usando um arquivo css global 
+[FEITO] Carregar header em todas as paginas usando js
+[FEITO] Carregar css do header em todas as paginas usando um arquivo css global
 
-Carregar header em todas as paginas usando js
-Carregar css do header em todas as paginas usando um arquivo css global
 Header responsivo com menu hamburguinho
 
 

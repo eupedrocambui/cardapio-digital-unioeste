@@ -39,3 +39,50 @@
 .nav-link-selected {
     text-decoration: underline;
 }
+
+.hamburguer {
+    display: none;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #003366;
+    border-top: 1px solid #fff;
+}
+
+.menu-link {
+    padding: 12px 0;
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 850px) {
+    .header-nav {
+        display: none;
+    }
+
+    .header-logo-nome p {
+        margin-left: 10px;
+    }
+    
+    .hamburguer {
+        display: block;
+        /*width: 8vw;*/
+        padding: 0 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .bars-icon {
+        color: white;
+        font-size: 28px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}
