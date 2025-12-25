@@ -29,73 +29,22 @@ main {
 }
 
 main {
-    max-width: 1536px;
-    width: 80%;
+    width: 80vw;
     margin-left: auto;
     margin-right: auto;
 }
- 
-/* header start */
 
-.ru-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #003366;
-    padding-top: 10px;
-}
-
-.header-logo-nome {
-    display: flex;
-    align-items: center;
-}
-
-.header-logo-nome p {
-    margin-left: 20px;
-    color: white;
-}
-
-.header-logo {
-    width: 100px;
-    height: 73px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.header-nav {
-    margin-right: 70px;
-}
-
-.nav-link {
-    padding-left: 10px;
-    padding-right: 10px;
-    color: white;
-    text-decoration: none;
-    
-}
-
-.nav-link-selected {
-    text-decoration: underline;
-}
-
-/* header end */
-
-/* titulo start */
+/* ======== Título "Avaliações" ========  */
 
 .titulo {
-    
-    max-width: 1536px;
-    width: 80%;
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .titulo h1 {
     color: #003366;
 }
 
-/* titulo end */
-
-/* avaliacoes start */
+/* ======== Seção Avaliações ========  */
 
 .avaliacoes-container {
     margin-top: 30px;
@@ -190,9 +139,8 @@ main {
 .refeicao p {
         color: white;
 }
-/* avaliacoes end */
 
-/* aviso nenhuma avaliacao start */
+/* ======== Aviso "Nenhuma Avaliação Disponível" ========  */
 
 .avaliacao-vazia {
   display: flex;
@@ -241,4 +189,26 @@ main {
   transition: .3s;
 }
 
-/* aviso nenhuma avaliacao end */
+/* ======== DISPOSITIVOS PEQUENOS ======== */
+@media screen and (max-width: 850px) {
+  main {
+    width: 100vw;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  body {
+    background-color: white;
+  }
+  
+  .titulo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .avaliacoes-container {
+    border-radius: 0px;
+    box-shadow: none;
+  }
+
+}
