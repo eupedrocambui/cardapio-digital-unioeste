@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refeição Avaliada</title>
+    <link rel="shortcut icon" href="images/favicon_unioeste.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/refeicaoAvaliada.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header (carregado com JS) -->
+    <div id="header"></div>
+
+    <main>
+        <div class="card">
+            <div class="card-content">
+                <h1 class="titulo-cardapio"></h1>
+                <h1 class="titulo-cardapio-mobile"></h1>
+
+                <div class="categoria-comida">
+                    <p>Salada:</p>
+                    <div class="js-salada js-linha-alimentos"></div>
+                </div>
+                
+                <div class="categoria-comida">
+                    <p>Guarnições:</p>
+                    <div class="js-guarnicoes js-linha-alimentos"></div>
+                </div>
+                
+                <div class="categoria-comida">
+                    <p>Proteínas:</p>
+                    <div class="js-proteinas js-linha-alimentos"></div>
+                </div>
+                
+                <div class="categoria-comida">
+                    <p>Sobremesa:</p>
+                    <div class="js-sobremesa js-linha-alimentos"></div>
+                </div>
+                
+                <div class="categoria-comida">
+                    <p>Bebida:</p>
+                    <div class="js-bebida js-linha-alimentos"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (carregado com JS) -->
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs/plugin/customParseFormat.js"></script>
+    <script src="https://unpkg.com/dayjs/locale/pt-br.js"></script>
+    <script>
+        dayjs.extend(dayjs_plugin_customParseFormat);
+        dayjs.locale("pt-br");
+    </script>
+
+    <script type="module" src="scripts/footer.js"></script>
+    <script type="module" src="scripts/header.js"></script>
+    <script type="module" src="scripts/refeicaoAvaliada.js"></script>
+</body>
+</html>

@@ -55,8 +55,10 @@ function renderAvaliacoes() {
         const nota = avaliacaoObject.nota;
         const nome = avaliacaoObject.nome;
         const campus = avaliacaoObject.campus;
+        const codigoCampus = avaliacaoObject.codigoCampus;
         const comentario = avaliacaoObject.comentario;
         const data = avaliacaoObject.data;
+        const codigoData = avaliacaoObject.codigoData;
         const refeicao = avaliacaoObject.refeicao;
         
         // gerando o html
@@ -73,19 +75,24 @@ function renderAvaliacoes() {
                         </div>
                     </div>
                     <div class="avaliacao-up-direita">
-                        <p>${nota}</p>
                         <img class="estrelas" src="images/${nota}_stars.png" alt="Estrelas">
                     </div>                
                 </div>
                 <div class="avaliacao-mid">
                     <p class="texto-avaliacao">"${comentario}"<p>
                 </div>
+                <div class="estrelas-mobile">
+                    <p>Avaliação: </p>
+                    <img class="estrelas" src="images/${nota}_stars.png" alt="Estrelas">
+                </div>
                 <div class="avaliacao-bottom">
                     <p>Refeição Avaliada: </p>
                     <div class="container-refeicao-avaliada">
                         ${refeicaoAvaliadaHTML(refeicao)}
-                    </div>
-                        
+                    </div>    
+                </div>
+                <div class="avaliacao-bottom-mobile">
+                    <button data-codigo="${codigoData}${codigoCampus}" class="button-refeicao-avaliada-mobile">Ver Refeição Avaliada</button> 
                 </div>
             </div>
         </div>
@@ -100,3 +107,14 @@ const avaliacoesHTML = renderAvaliacoes();
 
 const containerElem = document.querySelector('.container');
 containerElem.innerHTML = avaliacoesHTML;
+
+
+
+// event listeners botao "ver refeicao avaliada"
+const buttonRefeicaoAvaliadaArray = document.querySelectorAll('.button-refeicao-avaliada-mobile');
+buttonRefeicaoAvaliadaArray.forEach((buttonRefeicaoAvaliada) => {
+    buttonRefeicaoAvaliada.addEventListener('click', () => {
+        const codigo = buttonRefeicaoAvaliada.dataset.codigo;
+        window.location.href = `refeicaoAvaliada.html?data=${codigo}`;
+    });
+});

@@ -1,13 +1,21 @@
 [FEITO] Adicionar cardápio do RU do campus (shiro) 
 [FEITO] Página de obrigado contato
 [FEITO] Página de obrigado apos enviar avaliacao 
-[FEITO] Refazer a parte do banner da main (montar dedign novo e codar) 
+[FEITO] Refazer a parte do banner da main
 [FEITO] Carregar footer em todas as paginas usando js 
 [FEITO] Carregar css do footer em todas as paginas usando um arquivo css global 
 [FEITO] Carregar header em todas as paginas usando js
 [FEITO] Carregar css do header em todas as paginas usando um arquivo css global
+[FEITO] Header responsivo com menu hamburguinho
+[FEITO] No footer, deixar a logo da unioeste para mobile e desktop, não só para mobile
+[FEITO] Responsividade da página de Avaliações
+[FEITO] Remover número ao lado das estrelas na página de avaliações (mobile e desktop)
+[FEITO] Melhorar a letra das avaliações na página de avaliações (fonte, cor...)
 
-Header responsivo com menu hamburguinho
+Página "Ver Refeição Avaliada"
+
+(Avaliações na home) nome obrigatório?
+(Avaliações na home) comentário com tamanho mínimo? 
 
 
 ======== Device breakpoints (Resposividade) ========

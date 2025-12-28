@@ -23,9 +23,13 @@ footer {
     align-items: center;
 }
 
-.footer-ru-titulo {
-  padding-bottom: 15px;
-  font-size: 24px;
+.container-img-footer {
+    display: flex;
+}
+
+.logo-footer {
+    width: 95px;
+    padding-bottom: 20px;
 }
 
 .footer-endereco {
@@ -80,24 +84,17 @@ footer {
 }
 
 /* manter elementos escondidos para desktop */
-.logo-footer, .email-footer, .telefone-footer {
+.email-footer, .telefone-footer {
   display: none;
 }
 
 @media screen and (max-width: 850px) {
   /* utilizar elementos na versão mobile */
-  .logo-footer, .email-footer, .telefone-footer {
+  .email-footer, .telefone-footer {
     display: block;
   }
 
-  .container-img-footer {
-    display: flex;
-  }
-
-  .logo-footer {
-    width: 95px;
-    padding-bottom: 20px;
-  }
+  
 
   .footer-endereco {
     padding: 0;

@@ -116,13 +116,22 @@ botaoEnviarElem.addEventListener('click', () => {
         nota: nota,
         nome: nome,
         campus: campus,
+        codigoCampus: (campus === 'Campus Unioeste') ? 1 : 2, // cod 1: campus unioeste | cod 2: itaipu parquetec
         comentario: comentario,
         data: dayjs().format('DD [de] MMMM, YYYY'),
-        refeicao: (campus === 'Campus Unioeste') ? arrayRefeicaoCampus : arrayRefeicaoItaipu
+        codigoData: dayjs().format('DDMMYY'),
+        refeicao: (campus === 'Campus Unioeste') ? arrayRefeicaoCampus : arrayRefeicaoItaipu, // array com os alimentos
+        refeicaoCompleta: (campus === 'Campus Unioeste') ? cardapioCampus : cardapioItaipu, // objeto com as categorias e os alimentos
     }
 
-    avaliacoes.unshift(avaliacao);
+    // Colocando a avaliação atual na primeira posição (mais recente) do array de avaliações
+    avaliacoes.unshift(avaliacao); 
+
+    // Guardando o array de avaliações no local storage
     localStorage.setItem('avaliacoes', JSON.stringify(avaliacoes));
+
+    // Guardando o cardápio completo do campus selecionado no local storage (para usar em refeicaoAvaliada.html)
+    localStorage.setItem(`refeicao${avaliacao.codigoData}${avaliacao.codigoCampus}`, JSON.stringify(avaliacao.refeicaoCompleta));
 
     // Carregando página de obrigado
     window.location.href = "obrigadoAvaliacao.html";
