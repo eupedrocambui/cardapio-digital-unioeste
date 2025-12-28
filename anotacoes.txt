@@ -12,12 +12,12 @@
 [FEITO] Página "Ver Refeição Avaliada"
 [FEITO] Remover número ao lado das estrelas na página de avaliações (mobile e desktop)
 [FEITO] Melhorar a letra das avaliações na página de avaliações (fonte, cor...)
-
-(Avaliações na home) nome obrigatório?
-(Avaliações na home) comentário com tamanho mínimo? 
-(Avaliações na home) contador de caracteres no nome e comentario
+[FEITO] (Avaliações na home) comentário com tamanho mínimo de 15 caracteres 
+[FEITO] (Avaliações na home) contador de caracteres no nome e comentario
 
 Responsividade da página de contato
+Responsividade da página de obrigado (avaliacoes)
+Responsividade da página de obrigado (contato)
 
 
 

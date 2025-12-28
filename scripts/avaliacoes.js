@@ -1,9 +1,9 @@
-// pegar avaliacoes do local storage
+// Pegar/criar o array de avaliações do local storage
 let avaliacoes = JSON.parse(localStorage.getItem('avaliacoes')) || [];
 
 
 
-// funcao secundaria para gerar o HTML da refeicao avaliada (das avaliacoes)
+// refeicaoAvaliadaHTML -> gera o HTML da refeição avaliada
 function refeicaoAvaliadaHTML(arrayRefeicao) {
     let refeicaoAvaliadaHTML = '';
 
@@ -21,9 +21,9 @@ function refeicaoAvaliadaHTML(arrayRefeicao) {
 
 
 
-// funcao principal para gerar o HTML das avaliacoes
+// renderAvaliacoes -> gera o HTML das avaliações salvas no local storage
 function renderAvaliacoes() {
-    // verificar se não há avaliações
+    // verificar se não há avaliações, se não houver gera um aviso
     if (avaliacoes.length === 0) {
         const avisoHTML = 
         `
@@ -51,7 +51,7 @@ function renderAvaliacoes() {
     let avaliacoesHTML = '';
 
     avaliacoes.forEach((avaliacaoObject) => {
-        // retirando elementos do objeto
+        // extraindo as informações da avaliação
         const nota = avaliacaoObject.nota;
         const nome = avaliacaoObject.nome;
         const campus = avaliacaoObject.campus;
@@ -61,7 +61,7 @@ function renderAvaliacoes() {
         const codigoData = avaliacaoObject.codigoData;
         const refeicao = avaliacaoObject.refeicao;
         
-        // gerando o html
+        // gerando o html com as informações extraídas
         avaliacoesHTML += 
         `
         <div class="avaliacoes-container">
@@ -102,7 +102,7 @@ function renderAvaliacoes() {
     return avaliacoesHTML;
 }
 
-// colocar o resultado da funcao no inner html
+// Inserindo o HTML das avaliações na página
 const avaliacoesHTML = renderAvaliacoes();
 
 const containerElem = document.querySelector('.container');
@@ -110,8 +110,9 @@ containerElem.innerHTML = avaliacoesHTML;
 
 
 
-// event listeners botao "ver refeicao avaliada"
+// Botões "Ver Refeição Avaliada"
 const buttonRefeicaoAvaliadaArray = document.querySelectorAll('.button-refeicao-avaliada-mobile');
+
 buttonRefeicaoAvaliadaArray.forEach((buttonRefeicaoAvaliada) => {
     buttonRefeicaoAvaliada.addEventListener('click', () => {
         const codigo = buttonRefeicaoAvaliada.dataset.codigo;

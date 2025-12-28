@@ -1,17 +1,25 @@
-/*
-    Salada salada
-    Guarnições guarnicoes
-    Proteínas proteinas
-    Sobremesa sobremesa
-    Bebida bebida
+/* 
+Pegar/criar o array de avaliações do local storage
+"avaliacoes" é um array com vários objetos, cada objeto representa uma avaliação de um usuário 
 */
-
-// Criar o array de avaliacoes no local storage
 let avaliacoes = JSON.parse(localStorage.getItem('avaliacoes')) || [];
 
 
 
-// Objeto dos cardapios do dia
+// Inserindo a data do cardápio na página
+dayjs.locale('pt-br');
+const today = dayjs().format('DD [de] MMMM [de] YYYY'); // formatação para desktop
+const todayMobile = dayjs().format('DD/MM/YYYY'); // formatação para mobile
+
+const dataCardapioElem = document.querySelector('.js-data-cardapio');
+dataCardapioElem.innerHTML = today; // inserindo data no html (desktop)
+
+const dataCardapioMobileElem = document.querySelector('.js-data-cardapio-mobile');
+dataCardapioMobileElem.innerHTML = todayMobile; // inserindo data no html (mobile)
+
+
+
+// Objeto do cardápio do dia (itaipu parquetec)
 const cardapioItaipu = {
     salada: [
         'Alface',
@@ -35,6 +43,7 @@ const cardapioItaipu = {
     ]
 };
 
+// Objeto do cardápio do dia (campus unioeste)
 const cardapioCampus = {
     salada: [
         'Alface',
@@ -58,12 +67,13 @@ const cardapioCampus = {
     ]
 };
 
+// Arrays dos alimentos de cada campus sem as categorias
 const arrayRefeicaoItaipu = Object.values(cardapioItaipu).flat();
 const arrayRefeicaoCampus = Object.values(cardapioCampus).flat();
 
 
 
-// Função para passar o cardápio do objeto JS para o HTML
+// RenderCardapio -> Colocar cada alimento do cardápio em sua categoria na página
 function renderCardapio(objetoCardapio, campus) {
     for (const categoria in objetoCardapio) {
         const arrayAlimentos = objetoCardapio[categoria];
@@ -80,12 +90,59 @@ function renderCardapio(objetoCardapio, campus) {
     }
 }
 
-renderCardapio(cardapioItaipu, 'itaipu');
-renderCardapio(cardapioCampus, 'unioeste');
+renderCardapio(cardapioItaipu, 'itaipu'); // carrega o cardápio (itaipu parquetec)
+renderCardapio(cardapioCampus, 'unioeste'); // carrega o cardápio (campus unioeste)
 
 
 
-// Botao Enviar da section avaliações
+// Estrelas "Sua Avaliação Geral", seção avaliações
+const range = document.getElementById("rangeNota");
+const valor = document.getElementById("valorNota");
+const estrelas = document.querySelector(".estrelas");
+
+range.addEventListener("input", () => {
+    const nota = range.value;
+
+    // atualiza o texto do número
+    valor.textContent = nota;
+
+    // atualiza a imagem das estrelas
+    estrelas.src = `images/${nota}_stars.png`;
+});
+
+
+
+// Contador de caracteres do input "Seu Nome" da seção avaliações
+const inputNomeElem = document.getElementById('name');
+const contadorNomeElem = document.querySelector('.contador-nome');
+
+inputNomeElem.addEventListener('input', () => {
+    const nomeLength = inputNomeElem.value.length;
+    contadorNomeElem.innerHTML = `${nomeLength}/30`;
+    if (nomeLength === 30) {
+        contadorNomeElem.style.color = '#ff2c2c';
+    } else {
+        contadorNomeElem.style.color = '#3f3f3f';
+    }
+});
+
+// Contador de caracteres do input "Comentários Detalhados" da seção avaliações
+const inputComentarioElem = document.getElementById('coment');
+const contadorComentarioElem = document.querySelector('.contador-comentario');
+
+inputComentarioElem.addEventListener('input', () => {
+    const comentarioLength = inputComentarioElem.value.length;
+    contadorComentarioElem.innerHTML = `${comentarioLength}/500`;
+    if (comentarioLength === 500) {
+        contadorComentarioElem.style.color = '#ff2c2c';
+    } else {
+        contadorComentarioElem.style.color = '#3f3f3f';
+    }
+});
+
+
+
+// Botão "Enviar Avaliação" da seção avaliações
 const botaoEnviarElem = document.querySelector('.botao-enviar');
 botaoEnviarElem.addEventListener('click', () => {
     // Elementos no HTML
@@ -97,7 +154,7 @@ botaoEnviarElem.addEventListener('click', () => {
     const valorNotaElem = document.getElementById('valorNota');
     const estrelasElem = document.getElementById('estrelas');
 
-    // Valores dos elementos
+    // Extraindo os valores dos elementos
     const nota = rangeNotaElem.value;
     const nome = nomeElem.value || 'Nome não informado';
     const campus = campusInputElem.value;
@@ -110,7 +167,7 @@ botaoEnviarElem.addEventListener('click', () => {
         return;
     }
    
-    // Resetando o range, nome, campus e comentario
+    // Resetando o range, nome, campus e comentário
     rangeNotaElem.value = 5;
     nomeElem.value = '';
     campusUnioesteRadioElem.checked = true;
@@ -118,7 +175,7 @@ botaoEnviarElem.addEventListener('click', () => {
     valorNotaElem.innerHTML = '5';
     estrelasElem.src = "images/5_stars.png";
 
-    // Guardando a avaliacao no local storage
+    // Guardando a avaliação no local storage
     const avaliacao = {
         nota: nota,
         nome: nome,
@@ -131,7 +188,7 @@ botaoEnviarElem.addEventListener('click', () => {
         refeicaoCompleta: (campus === 'Campus Unioeste') ? cardapioCampus : cardapioItaipu, // objeto com as categorias e os alimentos
     }
 
-    // Colocando a avaliação atual na primeira posição (mais recente) do array de avaliações
+    // Colocando a avaliação (objeto) na primeira posição (mais recente) do array de avaliações
     avaliacoes.unshift(avaliacao); 
 
     // Guardando o array de avaliações no local storage
@@ -143,33 +200,3 @@ botaoEnviarElem.addEventListener('click', () => {
     // Carregando página de obrigado
     window.location.href = "obrigadoAvaliacao.html";
 }); 
-
-
-
-// data do cardápio
-dayjs.locale('pt-br');
-const today = dayjs().format('DD [de] MMMM [de] YYYY'); // formatação para desktop
-const todayMobile = dayjs().format('DD/MM/YYYY'); // formatação para mobile
-
-const dataCardapioElem = document.querySelector('.js-data-cardapio');
-dataCardapioElem.innerHTML = today; // inserindo data no html (desktop)
-
-const dataCardapioMobileElem = document.querySelector('.js-data-cardapio-mobile');
-dataCardapioMobileElem.innerHTML = todayMobile; // inserindo data no html (mobile)
-
-
-
-// input 'avalie sua refeicao'
-const range = document.getElementById("rangeNota");
-const valor = document.getElementById("valorNota");
-const estrelas = document.querySelector(".estrelas");
-
-range.addEventListener("input", () => {
-    const nota = range.value;
-
-    // Atualiza o texto do número
-    valor.textContent = nota;
-
-    // Atualiza a imagem das estrelas
-    estrelas.src = `images/${nota}_stars.png`;
-});

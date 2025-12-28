@@ -88,13 +88,12 @@ footer {
   display: none;
 }
 
+/* ======== DISPOSITIVOS PEQUENOS ======== */
 @media screen and (max-width: 850px) {
   /* utilizar elementos na versão mobile */
   .email-footer, .telefone-footer {
     display: block;
   }
-
-  
 
   .footer-endereco {
     padding: 0;

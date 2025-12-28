@@ -59,6 +59,7 @@
     color: white;
 }
 
+/* ======== DISPOSITIVOS PEQUENOS ======== */
 @media screen and (max-width: 850px) {
     .header-nav {
         display: none;
@@ -70,7 +71,6 @@
     
     .hamburguer {
         display: block;
-        /*width: 8vw;*/
         padding: 0 20px;
         background: none;
         border: none;

@@ -2,6 +2,8 @@
 const info = new URLSearchParams(window.location.search);
 const codigo = info.get('data');
 
+
+
 // Transformar o código em data e inserir no título
 const dataMobile = `${codigo.slice(0, 2)}/${codigo.slice(2, 4)}/${codigo.slice(4, 6)}`; // 2612251 -> 26/12/25
 
@@ -13,7 +15,9 @@ tituloElemMobile.innerHTML = `Cardápio - ${dataMobile}`;
 const tituloElemDesktop = document.querySelector('.titulo-cardapio'); // dispositivos de tela maior
 tituloElemDesktop.innerHTML = `Cardápio - ${dataDesktop}`;
 
-// Trazer o array da refeição pelo local storage
+
+
+// Trazer o array da refeição do local storage
 const objetoRefeicao = JSON.parse(localStorage.getItem(`refeicao${codigo}`));
 
 // Colocar os alimentos em suas categorias na página

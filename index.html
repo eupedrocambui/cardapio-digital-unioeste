@@ -145,9 +145,10 @@
                 </div>
 
                 <!-- Nome --> 
-                <div class="campo">
+                <div class="campo campo-nome">
                     <label for="name">Seu nome:</label>
                     <textarea maxlength="30" id="name" placeholder="Ex: Pedro"></textarea>
+                    <span class="contador-nome">0/30</span>
                 </div>
 
                 <!-- Campus -->
@@ -168,12 +169,13 @@
                 </div>
 
                 <!-- Comentário -->
-                <div class="campo">
+                <div class="campo campo-comentario">
                     <label for="coment">Comentários Detalhados:</label>
                     <textarea maxlength="500" id="coment" placeholder="O que você achou da comida? (Sabor, temperatura, opções, etc.)"></textarea>
+                    <span class="contador-comentario">0/500</span>
                 </div>
 
-                <!-- Aviso Caracteres do Comentário -->
+                <!-- Warning para Tamanho do Comentário (mín -> 15 caracteres) -->
                  <div class="aviso-comentario">
                     <div class="aviso-comentario-content">
                         <i class="fa-solid fa-triangle-exclamation icon-warning"></i>

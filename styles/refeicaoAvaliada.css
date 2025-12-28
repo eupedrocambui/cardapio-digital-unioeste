@@ -73,6 +73,7 @@ main {
   row-gap: 20px;
 }
 
+/* ======== DISPOSITIVOS PEQUENOS ======== */
 @media screen and (max-width: 850px) {
     .titulo-cardapio {
         display: none;
@@ -80,7 +81,7 @@ main {
 
     .titulo-cardapio-mobile {
         display: flex;
-    justify-content: center;
+        justify-content: center;
     }
 
     .card {

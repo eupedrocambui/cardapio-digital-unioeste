@@ -383,7 +383,17 @@ main {
   padding-right: 15px;
 }
 
+.campo-nome, .campo-comentario { /* contador de caracteres */
+  position: relative;
+}
 
+.contador-nome, .contador-comentario { /* contador de caracteres */
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 12px;
+  color: #3f3f3f;
+}
 
 /* ======== DISPOSITIVOS PEQUENOS ======== */
 @media screen and (max-width: 850px) {
