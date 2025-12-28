@@ -352,6 +352,39 @@ main {
     font-weight: 500;
 }
 
+.aviso-comentario {
+  display: none;
+  background-color: #ff2c2c;
+  max-width: 420px;
+  width: 85%;
+  margin-bottom: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+  padding: 7px;
+}
+
+.aviso-comentario-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 3px;
+}
+
+.aviso-comentario p {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.icon-warning {
+  color: #fff;
+  font-size: 25px;
+  padding-right: 15px;
+}
+
+
+
 /* ======== DISPOSITIVOS PEQUENOS ======== */
 @media screen and (max-width: 850px) {
   .main { /* corrige alinhamentos e bordas entre seções */

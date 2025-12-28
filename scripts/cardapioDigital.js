@@ -102,6 +102,13 @@ botaoEnviarElem.addEventListener('click', () => {
     const nome = nomeElem.value || 'Nome não informado';
     const campus = campusInputElem.value;
     const comentario = comentarioElem.value;
+
+    // Verificando se há no mínimo 15 caracteres no comentário
+    if (comentario.length < 15) {
+        const warningElem = document.querySelector('.aviso-comentario');
+        warningElem.style.display = 'block';
+        return;
+    }
    
     // Resetando o range, nome, campus e comentario
     rangeNotaElem.value = 5;
