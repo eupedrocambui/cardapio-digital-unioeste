@@ -16,7 +16,7 @@ body {
 }
 
 main {
-    background-color: #e1e1e1;
+    background-color: #fff;
 }
 
 /* ======== Seção Main ========  */
@@ -34,13 +34,14 @@ main {
 
 .contato-container {
     display: flex;
-    justify-content: space-between;
-    gap: 130px;
-    margin: 0 15%;
+    justify-content: center;
+    gap: 100px;
     background-color: white;
-    border-radius: 20px;
-    padding: 30px; 
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+
+    padding-top: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;   
 }
 
 .contato-left {
@@ -123,8 +124,7 @@ input:focus {
 
 .linha-info {
     display: flex;
-    height: 30px;
-    margin: 10px 0;
+    padding: 10px 0px;
 }
 
 .linha-info p {

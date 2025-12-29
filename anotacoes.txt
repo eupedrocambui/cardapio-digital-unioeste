@@ -24,3 +24,7 @@ Responsividade da página de obrigado (contato)
 ======== Device breakpoints (Resposividade) ========
 1250px (menos disso muda o footer)
 850px (menos disso passa o header para hamburguinho e versao celular)
+
+
+======== Device breakpoints Página de Contato (Resposividade) ========
+1500px (menos disso deixa o formulario e as informacoes em coluna)
