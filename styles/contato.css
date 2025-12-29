@@ -19,7 +19,7 @@ main {
     background-color: #fff;
 }
 
-/* ======== Seção Main ========  */
+/* ======== Informações e Formulário ========  */
 
 .main-container {
     padding-bottom: 50px;
@@ -31,17 +31,15 @@ main {
     padding: 70px;
 }
 
+/* ======== Informações (lado esquerdo) ========  */
 .contato-left {
     display: flex;
     flex-direction: column;
     padding-right: 5vw;
 }
 
-.email-left, .telefone-left {
+.titulo-container {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-top: 25px;
 }
 
 .titulo {
@@ -59,6 +57,30 @@ main {
 .texto-destaque {
     font-family: 'Inter';
     font-size: 16px;
+}
+
+.email-left, .telefone-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.icons-info {
+    font-size: 25px;
+    padding-right: 15px;
+    color: #003366;
+}
+
+/* ======== Formulário (lado direito) ========  */
+.contato-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-right h1 {
+    color: #003366;
+    padding-bottom: 10px;
 }
 
 .form {
@@ -89,6 +111,7 @@ input:focus {
 
 #mensagem {
     height: 100px;
+    width: 350px;
     border: none;
     background-color: #ededed;
     border-radius: 10px;
@@ -118,41 +141,29 @@ input:focus {
     margin-right: 0px;
 }
 
-.contato-right {
-    display: flex;
-    flex-direction: column;
-}
-
-.contato-right h1 {
-    color: #003366;
-    padding-bottom: 10px;
-}
-
-.linha-info {
-    display: flex;
-    padding: 10px 0px;
-}
-
-.linha-info p {
-    color: rgb(27, 27, 27);
-    font-weight: 100;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.span-info {
-    font-weight: 600;
-    color: #003366;
-    padding-right: 2px;
-}
-
-.icons-info {
-    font-size: 25px;
-    padding-right: 15px;
-    color: #003366;
-}
-
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1300px) { /* correção nas bordas da página em dispositivos maiores */
     .contato-container {
         padding: 70px 15%;
+    }
+}
+
+/* ======== DISPOSITIVOS PEQUENOS ======== */
+@media screen and (max-width: 850px) {
+    .contato-container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .contato-right {
+        padding-top: 5vh;
+    }
+
+    .contato-left {
+        padding-right: 0px;
+    }
+
+    .titulo {
+        text-align: center;
+        padding-bottom: 10px;
     }
 }
