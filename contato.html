@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header (Carregado com JS) -->
@@ -16,88 +17,69 @@
 
     <!-- Main -->
     <main>
-        
-            <div class="contato-titulo">
-                <h1>Fale Conosco</h1>
-            </div>
-                <div class="contato-container">
-
-                <!-- Formulário de Contato -->
-                
-                <div class="contato-left">
-                    <h1>Suas Informações</h1>
-                    <form action="https://formsubmit.co/teste.pedrocambui@gmail.com" method="POST">
-
-                        <!-- Nome -->
-                        <div class="form">
-                            <label for="name">Nome Completo</label>
-                            <input placeholder="Seu nome" type="text" name="name" id="name" required>
+        <div class="contato-container">
+            <!-- Título e Informações de Contato -->
+            <div class="contato-left">
+                <div class="contato-left-content">
+                    <h1 class="titulo">Nossa Equipe Está Pronta Para te Atender</h1>
+                    <p class="texto">Entre em contato conosco via formulário, e-mail ou telefone para que nossa equipe te atenda da melhor forma possível.</p>
+                    <div class="email-left">
+                        <i class="fa-regular fa-envelope icons-info"></i>
+                        <div class="email-left-content">
+                            <p class="texto">E-mail:</p>
+                            <p class="texto-destaque">restaurante@unioeste.com</p>
                         </div>
-                        
-                        <!-- E-mail -->
-                        <div class="form">
-                            <label for="email">E-mail</label>
-                            <input placeholder='ex: "usuario@gmail.com"' type="email" name="email" id="email" required>
-                        </div>
-
-                        <!-- Assunto -->
-                        <div class="form">
-                            <label for="">Assunto</label>
-                            <input placeholder='ex: "Falta de mesas no refeitório"' type="text" name="_subject" id="assunto" required>
-                        </div>  
-
-                        <!-- Mensagem -->
-                        <div class="form">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea name="message" id="mensagem" placeholder="Sua mensagem"></textarea>
-                        </div>
-                        
-                        <!-- Desabilitar captcha -->
-                        <input type="hidden" name="_captcha" value="false">
-
-                        <!-- Página de obrigado -->
-                        <input type="hidden" name="_next" value="https://eupedrocambui.github.io/cardapio_digital_faculdade/obrigado.html">
-                            
-                        <!-- Botão enviar -->
-                        <button class="botao-enviar" type="submit">Enviar Mensagem</button>
-                    </form>
-                </div>
-
-                <!-- Informações de Contato -->
-                <div class="contato-right">
-                    <h1>Informações de Contato</h1>
-                    <!-- Endereço 1 -->
-                    <div class="linha-info">
-                        <i class="fa-solid fa-location-dot icons-info"></i>
-                        <p><span class="span-info">Endereço 1:</span> Av. Tarquínio Joslin dos Santos, 1300 - Lot. Universitário das Américas, Foz do Iguaçu - PR</p>
                     </div>
-
-                    <!-- Endereço 2 -->
-                    <div class="linha-info">
-                        <i class="fa-solid fa-location-dot icons-info"></i>
-                        <p><span class="span-info">Endereço 2:</span> Itaipu Parquetec, Foz do Iguaçu - PR</p>
-                    </div>
-                    
-                    <!-- Telefone -->
-                    <div class="linha-info">
+                    <div class="telefone-left">
                         <i class="fa-solid fa-phone icons-info"></i>
-                        <p><span class="span-info">Telefone:</span> (45) 91234-5678</p>
-                    </div>
-
-                    <!-- E-mail -->
-                    <div class="linha-info">
-                        <i class="fa-solid fa-envelope icons-info"></i>
-                        <p><span class="span-info">E-mail:</span> restaurante@unioeste.com</p>
-                    </div>
-                    
-                    <!-- Horário de atendimento -->
-                    <div class="linha-info">
-                        <i class="fa-solid fa-clock icons-info"></i>
-                        <p><span class="span-info">Horário de Atendimento:</span>Seg à Sex, 11h30 às 14h</p>
+                        <div class="telefone-left-content">
+                            <p class="texto">Telefone:</p>
+                            <p class="texto-destaque">(45) 91234-5678</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        
+
+            <!-- Formulário de Contato -->
+            <div class="contato-right">
+                <h1>Suas Informações</h1>
+                <form action="https://formsubmit.co/teste.pedrocambui@gmail.com" method="POST">
+
+                    <!-- Nome -->
+                    <div class="form">
+                        <label for="name">Nome Completo</label>
+                        <input placeholder="Seu nome" type="text" name="name" id="name" required>
+                    </div>
+                    
+                    <!-- E-mail -->
+                    <div class="form">
+                        <label for="email">E-mail</label>
+                        <input placeholder='ex: "usuario@gmail.com"' type="email" name="email" id="email" required>
+                    </div>
+
+                    <!-- Assunto -->
+                    <div class="form">
+                        <label for="">Assunto</label>
+                        <input placeholder='ex: "Falta de mesas no refeitório"' type="text" name="_subject" id="assunto" required>
+                    </div>  
+
+                    <!-- Mensagem -->
+                    <div class="form">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="message" id="mensagem" placeholder="Sua mensagem"></textarea>
+                    </div>
+                    
+                    <!-- Desabilitar captcha -->
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <!-- Página de obrigado -->
+                    <input type="hidden" name="_next" value="https://eupedrocambui.github.io/cardapio_digital_faculdade/obrigado.html">
+                        
+                    <!-- Botão enviar -->
+                    <button class="botao-enviar" type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
     </main>
 
     <!-- Footer (carregado com JS) -->
