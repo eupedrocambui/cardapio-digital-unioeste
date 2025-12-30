@@ -14,8 +14,8 @@
 [FEITO] Melhorar a letra das avaliações na página de avaliações (fonte, cor...)
 [FEITO] (Avaliações na home) comentário com tamanho mínimo de 15 caracteres 
 [FEITO] (Avaliações na home) contador de caracteres no nome e comentario
+[FEITO] Responsividade da página de contato
 
-Responsividade da página de contato
 Responsividade da página de obrigado (avaliacoes)
 Responsividade da página de obrigado (contato)
 
@@ -28,3 +28,6 @@ Responsividade da página de obrigado (contato)
 
 ======== Device breakpoints Página de Contato (Resposividade) ========
 1500px (menos disso deixa o formulario e as informacoes em coluna)
+
+#ededed cinza que estava antes
+#f0ebe3
