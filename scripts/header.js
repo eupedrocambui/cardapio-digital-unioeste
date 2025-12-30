@@ -1,4 +1,4 @@
-fetch("../header.html")
+fetch("/cardapio-digital-unioeste/header.html")
   .then(response => response.text())
   .then(data => {
     // Carregando o header no DOM
