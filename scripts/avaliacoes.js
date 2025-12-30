@@ -30,14 +30,14 @@ function renderAvaliacoes() {
             <div class="avaliacao-vazia">
 
                 <div class="avaliacao-vazia-left">
-                    <img src="images/chef.png" alt="Sem avaliações" class="img-vazio">
+                    <img src="./images/chef.png" alt="Sem avaliações" class="img-vazio">
                 </div>
 
                 <div class="avaliacao-vazia-right">
                     <h2>Nenhuma avaliação disponível no momento</h2>
                     <p>Seja o primeiro a deixar sua opinião!</p>
 
-                    <a href="index.html#avaliar" class="btn-avaliar">
+                    <a href="./index.html#avaliar" class="btn-avaliar">
                     Deixar uma avaliação
                     </a>
                 </div>
@@ -68,14 +68,14 @@ function renderAvaliacoes() {
             <div class="avaliacao">
                 <div class="avaliacao-up">
                     <div class="avaliacao-up-esquerda">
-                        <img class="user-foto" src="images/foto_usuario.png" alt="Foto Usuario">
+                        <img class="user-foto" src="./images/foto_usuario.png" alt="Foto Usuario">
                         <div class="nome-data">
                             <p class="nome">${nome} - ${campus}</p>
                             <p class="data">Avaliou em ${data}</p>
                         </div>
                     </div>
                     <div class="avaliacao-up-direita">
-                        <img class="estrelas" src="images/${nota}_stars.png" alt="Estrelas">
+                        <img class="estrelas" src="./images/${nota}_stars.png" alt="Estrelas">
                     </div>                
                 </div>
                 <div class="avaliacao-mid">
@@ -83,7 +83,7 @@ function renderAvaliacoes() {
                 </div>
                 <div class="estrelas-mobile">
                     <p>Avaliação: </p>
-                    <img class="estrelas" src="images/${nota}_stars.png" alt="Estrelas">
+                    <img class="estrelas" src="./images/${nota}_stars.png" alt="Estrelas">
                 </div>
                 <div class="avaliacao-bottom">
                     <p>Refeição Avaliada: </p>

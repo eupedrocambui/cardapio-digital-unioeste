@@ -107,7 +107,7 @@ range.addEventListener("input", () => {
     valor.textContent = nota;
 
     // atualiza a imagem das estrelas
-    estrelas.src = `images/${nota}_stars.png`;
+    estrelas.src = `./images/${nota}_stars.png`;
 });
 
 
@@ -173,7 +173,7 @@ botaoEnviarElem.addEventListener('click', () => {
     campusUnioesteRadioElem.checked = true;
     comentarioElem.value = '';
     valorNotaElem.innerHTML = '5';
-    estrelasElem.src = "images/5_stars.png";
+    estrelasElem.src = "./images/5_stars.png";
 
     // Guardando a avaliação no local storage
     const avaliacao = {
