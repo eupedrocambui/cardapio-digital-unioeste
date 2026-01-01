@@ -97,6 +97,7 @@ cardapio-digital-unioeste/
 │   ├── obrigado.css                         # Estilos da página de obrigado (contato)
 │   ├── obrigadoAvaliacao.css                # Estilos da página de obrigado (avaliações)
 │   └── refeicaoAvaliada.css                 # Estilos da página de refeição avaliada
+├── README.md                                # Este arquivo
 ├── avaliacoes.html                          # Página de avaliações
 ├── contato.html                             # Página de contato
 ├── footer.html                              # Estrutura do rodapé
